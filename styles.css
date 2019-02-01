@@ -14,15 +14,27 @@ body {
 
 .undefined-txt {
   color: #fafafa;
-  font-weight: bold;
+  font-weight: 500;
 }
 
 .bootcamp-txt {
   color: #555;
+  display: block;
+  font-weight: 400;
 }
 
-@media (min-width: 600px) {
+.bootcamp-txt:hover {
+  color: #777;
+}
+
+@media (min-width: 500px) {
   .title {
     font-size: 5em;
+  }
+}
+
+@media (min-width: 700px) {
+  .bootcamp-txt {
+    display: inline;
   }
 }
