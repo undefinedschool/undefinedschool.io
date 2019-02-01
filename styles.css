@@ -1,0 +1,28 @@
+body {
+  background-color: #111;
+  display: grid;
+  height: 100vh;
+  margin: 0;
+  place-items: center center;
+}
+
+.title {
+  font-size: 3em;
+  font-family: 'Montserrat', sans-serif;
+  padding: 34px;
+}
+
+.undefined-txt {
+  color: #fafafa;
+  font-weight: bold;
+}
+
+.bootcamp-txt {
+  color: #555;
+}
+
+@media (min-width: 600px) {
+  .title {
+    font-size: 5em;
+  }
+}
