@@ -22,7 +22,8 @@ section.main {
   background-size: cover;
 }
 
-section.apply {
+section.apply,
+section.goal {
   height: 100vh;
 }
 
@@ -81,6 +82,29 @@ h3 {
   font-family: 'Raleway', serif;
 }
 
+.center {
+  display: block;
+  text-align: center;
+}
+
+.link {
+  text-decoration: none;
+  color: #6e7378;
+}
+
+.link:hover {
+  color: #caccd2;
+  transition: color 0.2s ease;
+}
+
+h2.subtitle {
+  color: #eaeaea;
+  font-weight: 700;
+  font-size: 2.83em;
+  text-align: left;
+  padding: 32px 0;
+}
+
 h3.subtitle {
   color: #fafafa;
   font-weight: 600;
@@ -100,7 +124,7 @@ h2.description {
   font-size: 1.36em;
   color: #eaeaea;
   margin-top: 35px;
-  margin-bottom: 75px;
+  margin-bottom: 7px;
   opacity: 0.7;
 }
 
@@ -182,11 +206,6 @@ h2.description {
   border: 1px solid rgba(84, 105, 124, 0.3);
 }
 
-.center {
-  display: block;
-  text-align: center;
-}
-
 .footer-link {
   color: #6e7378;
 }
@@ -254,4 +273,20 @@ footer.section {
   margin-top: 40px;
   padding-bottom: 5px;
   color: #6e7378;
+}
+
+@media (min-width: 415px) {
+  #fullstack-js-dev:before {
+    height: 40%;
+    display: block;
+    content: '';
+  }
+}
+
+.more-info {
+  margin-bottom: 70px;
+}
+
+.syllabus-info {
+  font-size: 21px;
 }
