@@ -1,40 +1,126 @@
-body {
-  background-color: #111;
-  display: grid;
-  height: 100vh;
+* {
+  box-sizing: border-box;
   margin: 0;
-  place-items: center center;
+  padding: 0;
+}
+
+section.main {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(rgba(31, 35, 39, 0.95), rgba(31, 35, 39, 1)), url(assets/women-coding.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .title {
-  font-size: 3em;
   font-family: 'Montserrat', sans-serif;
-  padding: 34px;
+  color: #fafafa;
+  margin-bottom: 30px;
 }
 
-.undefined-txt {
+h1.title {
+  font-size: 2.3em;
+}
+
+@media (min-width: 666px) {
+  h1.title {
+    font-size: 3.17em;
+  }
+}
+
+@media (min-width: 960px) {
+  h1.title {
+    font-size: 3.5em;
+  }
+}
+
+.undefined-title {
   color: #fafafa;
   font-weight: 500;
 }
 
-.bootcamp-txt {
-  color: #555;
-  display: block;
+.school-title {
+  color: #6e7378;
   font-weight: 400;
 }
 
-.bootcamp-txt:hover {
-  color: #777;
+.blink {
+  color: #00c6b3;
+  font-weight: 400;
+  animation: blinker 0.95s linear infinite;
 }
 
-@media (min-width: 500px) {
-  .title {
-    font-size: 5em;
+@keyframes blinker {
+  50% {
+    opacity: 0;
   }
 }
 
-@media (min-width: 700px) {
-  .bootcamp-txt {
-    display: inline;
+.undefined-title,
+.school-title,
+.title-caret {
+  font-size: 1.579em;
+}
+
+h2 {
+  font-family: 'Raleway', serif;
+}
+
+@media (max-width: 1400px) {
+  h2.description {
+    font-size: 1.3em;
   }
+}
+
+h2.description {
+  font-size: 1.36em;
+  color: #eaeaea;
+  margin-top: 35px;
+  margin-bottom: 75px;
+  opacity: 0.7;
+}
+
+.green-tag {
+  color: #00c6b3;
+  font-weight: 500;
+}
+
+.apply-button,
+.study-guide-button {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  display: inline-block;
+  padding: 10px;
+  text-align: center;
+  width: 200px;
+  font-size: 18px;
+  border-radius: 3px;
+  margin-bottom: 20px;
+}
+
+.apply-button:hover,
+.study-guide-button:hover {
+  transition: all 0.3s ease;
+}
+
+.apply-button {
+  color: #1f2327;
+  background-color: #00c6b3;
+  border: 1px solid #00c6b3;
+  margin-right: 4px;
+}
+
+.apply-button:hover {
+  background-color: #00ddc7;
+}
+
+.study-guide-button {
+  color: #d6eadf;
+  border: 1px solid #d6eadf;
+}
+
+.study-guide-button:hover {
+  color: #1f2327;
+  background-color: #d6eadf;
 }
