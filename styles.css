@@ -33,7 +33,7 @@ section.apply {
 }
 
 h1.title {
-  font-size: 2.3em;
+  font-size: 2em;
 }
 
 @media (min-width: 666px) {
@@ -44,7 +44,7 @@ h1.title {
 
 @media (min-width: 960px) {
   h1.title {
-    font-size: 3.5em;
+    font-size: 3.6em;
   }
 }
 
@@ -86,8 +86,8 @@ h3.subtitle {
   font-weight: 600;
   font-size: 2.32em;
   text-align: center;
-  padding: 32px 0;
-  margin-bottom: 0;
+  padding: 32px 10px;
+  margin-bottom: 60px;
 }
 
 @media (max-width: 1400px) {
@@ -210,7 +210,6 @@ h2.description {
   right: 0;
   border-top: 1px solid;
   border-color: inherit;
-
   -webkit-transform: rotate(-5deg);
   -moz-transform: rotate(-5deg);
   -ms-transform: rotate(-5deg);
@@ -229,4 +228,30 @@ h2.description {
     display: block;
     float: right;
   }
+}
+
+.study-groups {
+  margin-bottom: 100px;
+}
+
+.group-card {
+  background-color: rgba(37, 58, 75, 0.3);
+}
+
+.group-card-career {
+  color: #aca9bb;
+  font-family: Raleway;
+  font-size: 16.5px;
+  font-weight: 400;
+}
+
+.footnotes {
+  color: #fafafa;
+  padding-top: 100px;
+}
+
+footer.section {
+  margin-top: 40px;
+  padding-bottom: 5px;
+  color: #6e7378;
 }
