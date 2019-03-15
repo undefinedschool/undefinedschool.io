@@ -290,3 +290,8 @@ footer.section {
 .syllabus-info {
   font-size: 21px;
 }
+
+header strong,
+p strong {
+  color: #fafafa;
+}
