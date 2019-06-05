@@ -295,3 +295,7 @@ header strong,
 p strong {
   color: #fafafa;
 }
+
+.column-header strong {
+  color: #363636;
+}
