@@ -1,3 +1,6 @@
+@tailwind base;
+@tailwind utilities;
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -9,22 +12,13 @@ html {
 }
 
 body {
-  background-color: #1f2327;
   font-family: 'Work Sans', sans-serif !important;
 }
 
 section.main {
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  background: linear-gradient(rgba(31, 35, 39, 0.96), rgba(31, 35, 39, 1)), url(assets/women-coding.jpg);
+  background: linear-gradient(rgba(31, 35, 39, 0.96), rgba(31, 35, 39, 1)), url(../assets/women-coding.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-section.apply,
-section.goal {
-  height: 100vh;
 }
 
 .title {
@@ -152,7 +146,6 @@ h2.description {
 }
 
 .apply-button {
-  color: #1f2327;
   background-color: #00c6b3;
   border: 1px solid #00c6b3;
   margin-right: 4px;
@@ -168,7 +161,6 @@ h2.description {
 }
 
 .study-guide-button:hover {
-  color: #1f2327;
   background-color: #d6eadf;
 }
 
