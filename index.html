@@ -9,13 +9,12 @@
     />
     <title>undefined school</title>
     <link rel="stylesheet" href="styles.css" />
-    <link rel="dns-prefetch" href="https://fonts.googleapis.com/css?family=Montserrat:400,500" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.0/css/bulma.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500&display=fallback" rel="stylesheet" />
     <link
-      rel="dns-prefetch"
-      href="https://fonts.googleapis.com/css?family=Raleway:600,700|Work+Sans:400,500"
+      href="https://fonts.googleapis.com/css?family=Raleway:600,700|Work+Sans:400,500&display=fallback"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.0/css/bulma.min.css" />
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-135677182-1"></script>
     <script>
@@ -134,15 +133,21 @@
             <div class="column is-full syllabus-info">
               <header class="column-header"><strong class="dark-strong">JavaScript (ES6/2015+)</strong></header>
               <section class="course-dates">
-                Fundamentos. Tipos primitivos. Variables (<code>var</code>, <code>let</code>, <code>const</code>).
-                <p>Condicionales (<code>if/else</code>, <code>switch</code>, <code>ternary operator</code>).</p>
+                Fundamentos. Tipos primitivos. Variables y constantes (<span class="code">var</span>,
+                <span class="code">let</span>, <span class="code">const</span>).
                 <p>
-                  Ciclos (<code>while</code>, <code>do... while</code>, <code>for</code>, <code>forEach</code>,
-                  <code>for... of</code>, <code>for... in</code>).
+                  Condicionales (<span class="code">if/else</span>, <span class="code">switch</span>,
+                  <span class="code">ternary operator</span>).
                 </p>
                 <p>
-                  Arrays. Métodos de Array (<code>map</code>, <code>filter</code>, <code>reduce</code>,
-                  <code>some</code>, <code>every</code>, <code>includes</code>, etc.).
+                  Ciclos (<span class="code">while</span>, <span class="code">do... while</span>,
+                  <span class="code">for</span>, <span class="code">forEach</span>, <span class="code">for... of</span>,
+                  <span class="code">for... in</span>).
+                </p>
+                <p>
+                  Arrays. Métodos de Array (<span class="code">map</span>, <span class="code">filter</span>,
+                  <span class="code">reduce</span>, <span class="code">some</span>, <span class="code">every</span>,
+                  <span class="code">includes</span>, etc.).
                 </p>
                 <p>Funciones. Call Stack.</p>
                 <p>Spread operator. Rest parameters. Default parameters. Destructuring.</p>
@@ -292,22 +297,14 @@
 
       <section
         class="section syllabus"
-        id="syllabus"
         style="background-color: #fafafa; border-top: 3px solid #eaeaea; border-bottom: 3px solid #eaeaea"
       >
         <h3 class="subtitle" style="color: #1f2327">Contacto</h3>
         <div class="container">
           <form name="contact" method="POST" data-netlify="true">
-            <p style="margin-bottom: 20px">
-              <label><input type="text" name="name" placeholder="Nombre"/></label>
-            </p>
-            <p style="margin-bottom: 20px">
-              <label><input type="email" name="email" placeholder="Email"/></label>
-            </p>
-
-            <p>
-              <label><textarea name="message" placeholder="Mensaje"></textarea></label>
-            </p>
+            <input aria-label="Nombre" style="margin-bottom: 20px" type="text" name="name" placeholder="Nombre" />
+            <input aria-label="Email" style="margin-bottom: 20px" type="email" name="email" placeholder="Email" />
+            <textarea aria-label="Mensaje" name="message" placeholder="Mensaje"></textarea>
 
             <div style="display: flex; justify-content: flex-end;">
               <button class="apply-button submit" type="submit"><strong>Enviar</strong></button>
@@ -330,7 +327,7 @@
               rel="noopener"
               style="margin-right: 20px"
               aria-label="Email"
-              ><span class="footer-link"><i class="far fa-envelope fa-2x" title="email"></i></span
+              ><span class="footer-link"><i class="far fa-envelope fa-2x" title="Email"></i></span
             ></a>
             <a
               href="https://instagram.com/undefinedschool"

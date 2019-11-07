@@ -250,7 +250,7 @@ h2.description {
 }
 
 .study-groups {
-  margin-bottom: 100px;
+  margin-bottom: 32px;
 }
 
 .group-card {
@@ -271,7 +271,6 @@ h2.description {
 
 footer.section {
   margin-top: 40px;
-  padding-bottom: 5px;
   color: #6e7378;
 }
 
@@ -346,4 +345,15 @@ textarea:focus {
 .submit {
   margin-right: 0;
   margin-top: 20px;
+}
+
+.code {
+  font-weight: bold !important;
+  font-family: monospace;
+  background-color: #f5f5f5;
+  border-radius: 3px;
+  color: #00c6b3;
+  font-size: 0.875em;
+  font-weight: 400;
+  padding: 4px;
 }
