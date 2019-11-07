@@ -346,3 +346,21 @@ textarea:focus {
   margin-right: 0;
   margin-top: 20px;
 }
+
+ul {
+  margin-left: 12px !important;
+  list-style-type: disc !important;
+  list-style-position: inside !important;
+}
+
+li {
+  color: #6e7378;
+  margin: 2px 0 !important;
+}
+
+code {
+  color: #00c6b3 !important;
+  padding: 4px !important;
+  background-color: #1f2327 !important;
+  border-radius: 3px;
+}
