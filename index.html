@@ -10,7 +10,11 @@
     <title>undefined school</title>
     <link rel="stylesheet" href="styles.css" />
     <link rel="dns-prefetch" href="https://fonts.googleapis.com/css?family=Montserrat:400,500" rel="stylesheet" />
-    <link rel="dns-prefetch" href="https://fonts.googleapis.com/css?family=Raleway:600,700|Work+Sans:400,500" rel="stylesheet" />
+    <link
+      rel="dns-prefetch"
+      href="https://fonts.googleapis.com/css?family=Raleway:600,700|Work+Sans:400,500"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.0/css/bulma.min.css" />
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-135677182-1"></script>
@@ -286,12 +290,47 @@
         </div>
       </section>
 
+      <section
+        class="section syllabus"
+        id="syllabus"
+        style="background-color: #fafafa; border-top: 3px solid #eaeaea; border-bottom: 3px solid #eaeaea"
+      >
+        <h3 class="subtitle" style="color: #1f2327">Contacto</h3>
+        <div class="container">
+          <form name="contact" method="POST" data-netlify="true">
+            <p style="margin-bottom: 20px">
+              <label><input type="text" name="name" placeholder="Nombre"/></label>
+            </p>
+            <p style="margin-bottom: 20px">
+              <label><input type="email" name="email" placeholder="Email"/></label>
+            </p>
+
+            <p>
+              <label><textarea name="message" placeholder="Mensaje"></textarea></label>
+            </p>
+
+            <div style="display: flex; justify-content: flex-end;">
+              <button class="apply-button submit" type="submit"><strong>Enviar</strong></button>
+            </div>
+          </form>
+        </div>
+      </section>
+
       <footer class="section">
         <div class="container">
           <div class="center" style="margin-bottom: 20px">
             <a href="https://twitter.com/undefinedschool" target="_blank" rel="noopener" aria-label="Twitter profile"
               ><span class="footer-link" style="margin-right: 20px"
                 ><i class="fab fa-twitter fa-2x" title="Twitter"></i></span
+            ></a>
+
+            <a
+              href="mailto:contacto@undefinedschool.io"
+              target="_blank"
+              rel="noopener"
+              style="margin-right: 20px"
+              aria-label="Email"
+              ><span class="footer-link"><i class="far fa-envelope fa-2x" title="email"></i></span
             ></a>
             <a
               href="https://instagram.com/undefinedschool"

@@ -304,3 +304,45 @@ p strong {
 .dark-strong {
   color: #363636;
 }
+
+form {
+  max-width: 360px;
+  margin: 0 auto;
+}
+
+form input,
+textarea {
+  padding: 1em;
+  display: block;
+  width: 100%;
+  margin-top: 1em;
+  font-family: 'Raleway', sans-serif;
+  resize: none;
+}
+
+input[type='text'],
+input[type='email'],
+textarea {
+  border: 1px solid #6e7378;
+  border-radius: 3px;
+}
+
+textarea {
+  padding: 1em !important;
+  font-family: 'Raleway', sans-serif !important;
+  height: 100px;
+}
+
+input[type='text']:focus,
+input[type='email']:focus,
+textarea:focus {
+  outline: none;
+  box-shadow: 0 0 6px #6e7378;
+  border: 1px solid #1f2327;
+  transition: all 0.24s ease-out;
+}
+
+.submit {
+  margin-right: 0;
+  margin-top: 20px;
+}
