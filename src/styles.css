@@ -1,8 +1,6 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 html {
   scroll-behavior: smooth;
@@ -13,11 +11,27 @@ body {
   font-family: 'Work Sans', sans-serif !important;
 }
 
+.black-100 {
+  color: #363636;
+}
+
+.gray-100 {
+  color: #aca9bb;
+}
+
+.cyan-100 {
+  color: #00c6b3;
+}
+
+.list-circle {
+  list-style-type: circle;
+}
+
 section.main {
   height: 100vh;
   display: flex;
   align-items: center;
-  background: linear-gradient(rgba(31, 35, 39, 0.97), rgba(31, 35, 39, 1)), url(assets/women-coding.jpg);
+  background: linear-gradient(rgba(31, 35, 39, 0.97), rgba(31, 35, 39, 1)), url(../assets/women-coding.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -298,10 +312,6 @@ footer.section {
 header strong,
 p strong {
   color: #fafafa;
-}
-
-.dark-strong {
-  color: #363636;
 }
 
 form {
