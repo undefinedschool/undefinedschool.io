@@ -13,7 +13,8 @@
   },
   "devDependencies": {},
   "scripts": {
-    "build:css": "postcss src/styles.css -o dist/compiled.css"
+    "build:css": "postcss src/styles.css -o dist/compiled.css",
+    "build": "npm run build:css"
   },
   "repository": {
     "type": "git",
