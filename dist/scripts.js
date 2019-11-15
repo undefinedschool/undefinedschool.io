@@ -1,15 +1,1 @@
-const expandButtons = document.querySelectorAll('.expand');
-
-expandButtons.forEach(btn =>
-  btn.addEventListener('click', () => {
-    const list = btn.parentNode.nextSibling.nextSibling;
-    const icon = btn.children[0].classList;
-    const text = btn.previousElementSibling.children[0].classList;
-
-    icon.toggle('fa-plus');
-    icon.toggle('fa-minus');
-    text.toggle('cyan-100');
-
-    list.classList.toggle('hidden');
-  })
-);
+const expandButtons=document.querySelectorAll(".expand");expandButtons.forEach(e=>e.addEventListener("click",()=>{const n=e.parentNode.nextElementSibling.classList,t=e.children[0].classList,l=e.previousElementSibling.children[0].classList;t.toggle("fa-plus"),t.toggle("fa-minus"),l.toggle("cyan-100"),n.toggle("hidden")}));

@@ -31,7 +31,7 @@ section.main {
   height: 100vh;
   display: flex;
   align-items: center;
-  background: linear-gradient(rgba(31, 35, 39, 0.97), rgba(31, 35, 39, 1)), url('../assets/women-coding.jpg');
+  background: linear-gradient(rgba(31, 35, 39, 0.97), rgba(31, 35, 39, 1)), url('assets/women-coding.jpg');
   background-repeat: no-repeat;
   background-size: cover;
 }
