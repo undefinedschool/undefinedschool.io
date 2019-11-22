@@ -15,7 +15,6 @@
   "scripts": {
     "minify:html": "html-minifier --collapse-whitespace --remove-comments --remove-optional-tags --remove-tag-whitespace --use-short-doctype src/index.html -o dist/index.html",
     "build:css": "postcss src/styles.css -o dist/styles.css",
-    "watch:css": "postcss src/styles.css -o dist/styles.css -w",
     "minify:js": "terser -c -m -o dist/scripts.js -- src/scripts.js",
     "build": "npm run minify:html && npm run build:css && npm run minify:js",
     "dev": "live-server dist"
