@@ -104,44 +104,87 @@
               style="font-family: 'Raleway', sans-serif;"
               class="nav-list lg:inline-block hidden text-sm text-brand-light-gray"
             >
-              <a href="#requirements"
-                ><li class="nav-link rounded block sm:inline-block px-2 sm:px-4 py-1">
-                  Requisitos
-                </li></a
-              >
-              <a href="#how-it-works"
-                ><li class="nav-link rounded block sm:inline-block mt-1 px-2 sm:px-4 py-1">
-                  Cómo funciona
-                </li></a
-              >
-              <a href="#pricing"
-                ><li class="nav-link rounded block sm:inline-block mt-1 px-2 sm:px-4 py-1">
-                  Costo
-                </li></a
-              >
-              <a href="#faq"
-                ><li class="nav-link rounded block sm:inline-block mt-1 px-2 sm:px-4 py-1">
-                  FAQ
-                </li></a
-              >
-              <a href="#contact"
-                ><li class="nav-link rounded block sm:inline-block mt-1 px-2 sm:px-4 py-1">
-                  Contacto
-                </li></a
-              >
-              <a
-                class="nav-apply-link"
-                href="https://undefinedschool.typeform.com/to/iAGeBSdf"
-                target="_blank"
-                rel="noopener noreferrer"
-                ><li class="block sm:inline-block text-brand-white mt-1 mb-2 rounded">
+              <li class="nav-link rounded block sm:inline-block mt-1 px-2 sm:px-4 py-1">
+                <a href="#requirements"
+                  ><button
+                    type="button"
+                    class="w-full text-left sm:text-center"
+                    style="outline: none;"
+                  >
+                    Requisitos
+                  </button></a
+                >
+              </li>
+              <li class="nav-link rounded block sm:inline-block mt-1 px-2 sm:px-4 py-1">
+                <a href="#how-it-works"
+                  ><button
+                    type="button"
+                    class="w-full text-left sm:text-center"
+                    style="outline: none;"
+                  >
+                    Cómo funciona
+                  </button></a
+                >
+              </li>
+              <li class="nav-link rounded block sm:inline-block mt-1 px-2 sm:px-4 py-1">
+                <a href="#pricing"
+                  ><button
+                    type="button"
+                    class="w-full text-left sm:text-center"
+                    style="outline: none;"
+                  >
+                    Costo
+                  </button></a
+                >
+              </li>
+              <li class="nav-link rounded block sm:inline-block mt-1 px-2 sm:px-4 py-1">
+                <a href="#faq"
+                  ><button
+                    type="button"
+                    class="w-full text-left sm:text-center"
+                    style="outline: none;"
+                  >
+                    FAQ
+                  </button></a
+                >
+              </li>
+              <li class="nav-link rounded block sm:inline-block mt-1 px-2 sm:px-4 py-1">
+                <a href="#subscribe"
+                  ><button
+                    type="button"
+                    class="w-full text-left sm:text-center"
+                    style="outline: none;"
+                  >
+                    Newsletter
+                  </button></a
+                >
+              </li>
+              <li class="nav-link rounded block sm:inline-block mt-1 px-2 sm:px-4 py-1">
+                <a href="#contact"
+                  ><button
+                    type="button"
+                    class="w-full text-left sm:text-center"
+                    style="outline: none;"
+                  >
+                    Contacto
+                  </button></a
+                >
+              </li>
+
+              <li class="nav-link block sm:inline-block text-brand-white mt-1 mb-2 rounded">
+                <a
+                  class="nav-apply-link"
+                  href="https://undefinedschool.typeform.com/to/iAGeBSdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <button
-                    class="nav-apply-button rounded px-2 sm:ml-2 sm:px-4 py-1 text-center sm:border sm:border-brand-white font-semibold sm:font-normal lg:shadow-xs"
+                    class="w-full text-left sm:text-center nav-apply-button rounded px-2 sm:ml-2 sm:px-4 py-1 sm:border sm:border-brand-white font-semibold sm:font-normal lg:shadow-xs"
                   >
                     Aplicar
                   </button>
-                </li></a
-              >
+                </a>
+              </li>
             </ul>
           </div>
         </nav>
@@ -160,8 +203,7 @@
                 <span class="font-semibold">Desarrollo Full Stack JavaScript</span>
               </h1>
               <p style="font-family: 'Raleway', sans-serif;">
-                Escuela Open Source de <strong>Desarrollo Web Full Stack</strong>, para grupos
-                reducidos.
+                Mentoría en <strong>Desarrollo Web Full Stack</strong>, para grupos reducidos.
               </p>
             </div>
 
@@ -935,7 +977,7 @@
         isOpen = !isOpen;
 
         if (isOpen) {
-          nav.style.maxHeight = '200px';
+          nav.style.maxHeight = '227px';
           openIcon.style.display = 'none';
           closeIcon.style.display = 'block';
           setTimeout(() => (navList.style.display = 'block'), 100);
