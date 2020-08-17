@@ -1,0 +1,957 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Primary Meta Tags -->
+    <title>Mentoría en Desarrollo Full Stack JavaScript | undefined school</title>
+    <meta name="title" content="Mentoría en Desarrollo Full Stack JavaScript | undefined school" />
+    <meta
+      name="description"
+      content="Mentoría en Desarrollo Full Stack JavaScript para grupos reducidos | Pagás lo que querés."
+    />
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://mentorship.undefinedschool.io" />
+    <meta property="og:title" content="Mentoría en Desarrollo Full Stack JavaScript" />
+    <meta
+      property="og:description"
+      content="Mentoría en Desarrollo Full Stack JavaScript para grupos reducidos | Pagás lo que querés."
+    />
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://mentorship.undefinedschool.io" />
+    <meta property="twitter:title" content="Mentoría en Desarrollo Full Stack JavaScript" />
+    <meta
+      property="twitter:description"
+      content="Mentoría en Desarrollo Full Stack JavaScript para grupos reducidos | Pagás lo que querés."
+    />
+    <!-- end Meta Tags -->
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png" />
+    <link rel="stylesheet" href="dist/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      async
+      defer
+      data-domain="mentorship.undefinedschool.io"
+      src="https://plausible.io/js/plausible.js"
+    ></script>
+  </head>
+  <body id="top" class="bg-brand-black">
+    <div class="fixed z-10 bg-brand-black w-full top-0 shadow-xs">
+      <div class="hint shadow-inner"></div>
+
+      <div
+        class="lg:flex lg:justify-between sm:py-2 pt-2 fixed z-10 bg-brand-black w-full mb-8 md:mb-32 lg:px-32 md:px-24 shadow-xs"
+      >
+        <div class="flex items-center justify-between md:px-0 px-10">
+          <div>
+            <a href="./">
+              <p
+                id="logo"
+                style="font-family: 'Montserrat', sans-serif;"
+                class="text-lg font-semibold"
+              >
+                <span class="text-brand-white">undefined</span>
+                <span class="text-brand-cyan">school</span>
+              </p>
+              <p
+                style="font-family: 'Raleway', sans-serif;"
+                class="text-gray-600 text-xs -mt-1 text-right"
+              >
+                <em>mentorship</em>
+              </p>
+            </a>
+          </div>
+          <div class="lg:hidden">
+            <button
+              aria-label="hamburguer button"
+              id="hamburguer-button"
+              type="button"
+              class="object-scale-down block text-brand-white focus:outline-none"
+            >
+              <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
+                <path
+                  id="open-icon"
+                  fill-rule="evenodd"
+                  d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"
+                />
+
+                <path
+                  id="close-icon"
+                  fill-rule="evenodd"
+                  d="M18.278 16.864a1 1 0 0 1-1.414 1.414l-4.829-4.828-4.828 4.828a1 1 0 0 1-1.414-1.414l4.828-4.829-4.828-4.828a1 1 0 0 1 1.414-1.414l4.829 4.828 4.828-4.828a1 1 0 1 1 1.414 1.414l-4.828 4.829 4.828 4.828z"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <nav
+          id="hamburguer-menu"
+          class="transition-all duration-150 ease-in px-8 mt-3 sm:mt-1 sm:text-center"
+        >
+          <div>
+            <ul
+              style="font-family: 'Raleway', sans-serif;"
+              class="nav-list lg:inline-block hidden text-sm text-brand-light-gray"
+            >
+              <a href="#requirements"
+                ><li class="nav-link rounded block sm:inline-block px-2 sm:px-4 py-1">
+                  Requisitos
+                </li></a
+              >
+              <a href="#how-it-works"
+                ><li class="nav-link rounded block sm:inline-block mt-1 px-2 sm:px-4 py-1">
+                  Cómo funciona
+                </li></a
+              >
+              <a href="#pricing"
+                ><li class="nav-link rounded block sm:inline-block mt-1 px-2 sm:px-4 py-1">
+                  Costo
+                </li></a
+              >
+              <a href="#faq"
+                ><li class="nav-link rounded block sm:inline-block mt-1 px-2 sm:px-4 py-1">
+                  FAQ
+                </li></a
+              >
+              <a href="#contact"
+                ><li class="nav-link rounded block sm:inline-block mt-1 px-2 sm:px-4 py-1">
+                  Contacto
+                </li></a
+              >
+              <a
+                class="nav-apply-link"
+                href="https://undefinedschool.typeform.com/to/iAGeBSdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><li class="block sm:inline-block text-brand-white mt-1 mb-2 rounded">
+                  <button
+                    class="nav-apply-button rounded px-2 sm:ml-2 sm:px-4 py-1 text-center sm:border sm:border-brand-white font-semibold sm:font-normal lg:shadow-xs"
+                  >
+                    Aplicar
+                  </button>
+                </li></a
+              >
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <div class="lg:p-32 md:p-24 p-10">
+      <header class="mt-10 sm:mt-16 mb-40">
+        <div style="font-family: 'Montserrat', sans-serif;" class="mx-auto">
+          <div class="text-brand-white">
+            <div class="mb-10 sm:mb-16">
+              <h1
+                class="text-4xl md:text-5xl mb-4 sm:mb-6 leading-none"
+                style="font-family: 'Raleway', sans-serif;"
+              >
+                <span class="font-light">Aprendé</span>
+                <span class="font-semibold">Desarrollo Full Stack JavaScript</span>
+              </h1>
+              <p style="font-family: 'Raleway', sans-serif;">
+                Escuela Open Source de <strong>Desarrollo Web Full Stack</strong>, para grupos
+                reducidos.
+              </p>
+            </div>
+
+            <div class="mb-12 sm:mb-16">
+              <div class="inline-block mb-4 mr-2 shadow-xs">
+                <a href="#problem"
+                  ><button
+                    class="shadow-sm container learn-more-button text-brand-light-green inline-block text-center text-lg"
+                  >
+                    Quiero saber más
+                  </button></a
+                >
+              </div>
+              <div class="inline-block shadow-xs">
+                <a
+                  href="https://undefinedschool.typeform.com/to/iAGeBSdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><button
+                    class="shadow-sm container apply-button text-brand-black bg-brand-cyan font-semibold inline-block text-center text-lg"
+                  >
+                    Aplicar
+                  </button></a
+                >
+              </div>
+            </div>
+
+            <div class="mb-3 object-scale-down max-w-md mx-auto">
+              <img
+                src="https://ik.imagekit.io/di61zq8lsy/hero-image_MXftdGm6GI.svg"
+                alt="women who code"
+              />
+            </div>
+
+            <div class="mb-20">
+              <a href="#problem" aria-label="about">
+                <img
+                  alt="down arrow"
+                  class="mx-auto animate-bounce w-6 h-6 text-brand-white"
+                  src="https://ik.imagekit.io/di61zq8lsy/down-arrow_oCcI5W4TXh.svg"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main class="container text-brand-white">
+        <section id="problem" class="max-w-5xl mb-48">
+          <h2 class="text-brand-cyan text-3xl mb-10" style="font-family: 'Raleway', sans-serif;">
+            Ser autodidacta a veces es difícil...
+          </h2>
+          <div style="font-family: 'Montserrat', sans-serif;" class="text-base font-light">
+            <p>
+              Estudiar desarrollo web de forma autodidacta (y gratis!) es, gracias a internet, cada
+              vez día más fácil. La cantidad de recursos disponibles comunidades, etc, crecen día a
+              día.
+            </p>
+
+            <br />
+
+            <p>
+              Pero estudiar por nuestra cuenta también nos pone delante de algunos desafíos, como
+              pueden ser
+            </p>
+
+            <br />
+
+            <ul class="ml-8 list-disc">
+              <li class="mb-3">
+                <strong class="font-semibold">Qué recursos usar</strong>: al haber una gran oferta
+                de recursos, a veces nos cuesta elegir cuáles usar o distinguir cuáles son de mejor
+                calidad.
+              </li>
+              <li class="mb-3">
+                <strong class="font-semibold">Qué camino seguir</strong>: terminamos ese curso o
+                tutorial... y ahora, cuál sería el siguiente paso? Necesitamos tener un camino más
+                guiado para aprovechar mejor el tiempo.
+              </li>
+              <li class="mb-3">
+                <strong class="font-semibold">Falta de feedback</strong>: nuestro único parámetro es
+                si podemos o resolver un determinado problema, pero nos gustaría tener una
+                devolución al respecto, para mejorar.
+              </li>
+              <li class="mb-3">
+                <strong class="font-semibold">Progreso irregular</strong>: la falta de horarios u
+                objetivos claros dificultan el progreso.
+              </li>
+            </ul>
+
+            <br />
+
+            <p>Si algo de esto te pasó, <strong class="font-semibold">seguí leyendo</strong> 👇</p>
+          </div>
+        </section>
+
+        <section id="about" class="max-w-5xl mb-48">
+          <h2 class="text-brand-cyan text-3xl mb-10" style="font-family: 'Raleway', sans-serif;">
+            De qué se trata
+          </h2>
+          <div style="font-family: 'Montserrat', sans-serif;" class="text-base font-light">
+            <p>
+              En estas mentorías, vas a participar de un grupo de estudio sobre desarrollo web,
+              mentoreado, con 2
+              <strong class="font-semibold">sesiones</strong> semanales,
+              <strong class="font-semibold">enfocadas en la práctica</strong>.
+            </p>
+
+            <br />
+
+            <p>
+              Practicar, practicar, practicar,
+              <strong class="font-semibold">¡vamos a codear mucho!</strong> 💪 De esta forma, iremos
+              completando las diferentes certificaciones y proyectos de
+              <a
+                class="underline"
+                href="https://www.freecodecamp.org/learn/"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><strong class="font-semibold">freeCodeCamp</strong></a
+              >, <strong class="font-semibold">desde cero</strong>, empezando por
+              <a
+                class="underline"
+                href="https://www.freecodecamp.org/learn/responsive-web-design/basic-html-and-html5/"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><strong class="font-semibold">HTML5</strong></a
+              >.
+            </p>
+
+            <br />
+
+            <p>
+              El objetivo final es que uses lo aprendido para armar tu
+              <strong class="font-semibold">portfolio</strong>.
+            </p>
+          </div>
+        </section>
+
+        <section id="about-the-group" class="max-w-5xl mb-48">
+          <h2 class="text-brand-cyan text-3xl mb-12" style="font-family: 'Raleway', sans-serif;">
+            Sobre el grupo
+          </h2>
+          <div class="flex items-center flex-col md:flex-row">
+            <div style="font-family: 'Montserrat', sans-serif;" class="text-base font-light">
+              <ul class="ml-8 list-disc">
+                <li class="mb-3">
+                  Se formará un <strong class="font-semibold">único grupo</strong>, con un
+                  <strong class="font-semibold">máximo de 10 estudiantes</strong>.
+                </li>
+                <li class="mb-3">
+                  <strong class="font-semibold">Dinámico</strong>: si alguien libera su lugar, se
+                  abre una nueva vacante.
+                </li>
+                <li>
+                  Se busca que sea más <strong class="font-semibold">diverso</strong> y esté
+                  conformado en su mayoría por <strong class="font-semibold">mujeres</strong> y
+                  <strong class="font-semibold">disidencias</strong>.
+                </li>
+              </ul>
+            </div>
+
+            <div class="md:ml-8 mt-8 md:mt-0 object-scale-down max-w-sm mx-auto">
+              <img src="https://ik.imagekit.io/di61zq8lsy/group_86ZeCcYkIM.svg" alt="study group" />
+            </div>
+          </div>
+        </section>
+
+        <section id="why" class="mb-48 max-w-5xl">
+          <h2 class="text-brand-cyan text-3xl mb-12" style="font-family: 'Raleway', sans-serif;">
+            Por qué es mejor que estudiar por mi cuenta
+          </h2>
+          <div style="font-family: 'Montserrat', sans-serif;" class="text-base font-light">
+            <ul class="ml-8 list-disc">
+              <li class="mb-3">
+                Estudiar con gente que tiene los mismos objetivos (con la que además podés hacer
+                <strong class="font-semibold">networking</strong>) es más divertido y
+                <strong class="font-semibold">efectivo</strong>, además de que genera
+                <strong class="font-semibold">compromiso</strong>.
+              </li>
+              <li class="mb-3">
+                Es más fácil avanzar (y <strong class="font-semibold">menos frustrante</strong>) si
+                tenés gente en la que apoyarte.
+              </li>
+              <li class="mb-3">
+                Vas a <strong class="font-semibold">resolver tus dudas mucho más rápido</strong>.
+              </li>
+              <li class="mb-3">
+                Vas a recibir (y también dar) <strong class="font-semibold">feedback</strong> sobre
+                tus soluciones.
+              </li>
+              <li>
+                Tener horarios y <strong class="font-semibold">objetivos claros</strong> acelera el
+                aprendizaje.
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section id="requirements" class="mb-48 max-w-5xl">
+          <h2 class="text-brand-cyan text-3xl mb-12" style="font-family: 'Raleway', sans-serif;">
+            Requisitos
+          </h2>
+          <div style="font-family: 'Montserrat', sans-serif;" class="text-base font-light">
+            <ul class="ml-8 list-disc">
+              <li class="mb-3">
+                Familiaridad con
+                <a
+                  class="underline"
+                  href="https://freeCodeCamp.org/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><strong class="font-semibold">freeCodeCamp</strong></a
+                >
+                (haberse registrado y resuelto algún ejercicio, etc).
+              </li>
+              <li class="mb-3">
+                Disponer de <strong class="font-semibold">tiempo para dedicarle al estudio</strong>
+                (lo recomendado es, al menos 1hr por día, siguiendo la filosofía del
+                <a
+                  class="underline"
+                  href="https://www.100daysofcode.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >#100DaysOfCode</a
+                >).
+              </li>
+              <li class="mb-3"><strong class="font-semibold">Micrófono</strong> para las calls.</li>
+              <li class="mb-3">
+                Espíritu autodidacta y <strong class="font-semibold">compromiso</strong>.
+              </li>
+              <li class="mb-3">
+                Leer y respetar el
+                <a
+                  class="underline"
+                  href="http://bit.ly/fccba-codigo"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><strong class="font-semibold">código de conducta</strong></a
+                >.
+              </li>
+              <li>
+                <strong class="font-semibold">Inglés</strong>: lectura y comprensión, para entender
+                el material de estudio.
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section id="how-it-works" class="mb-48 max-w-5xl">
+          <h2 class="text-brand-cyan text-3xl mb-12" style="font-family: 'Raleway', sans-serif;">
+            Cómo funciona
+          </h2>
+          <div style="font-family: 'Montserrat', sans-serif;" class="text-base font-light">
+            <ul class="ml-8 list-disc">
+              <li class="mb-3">
+                <strong class="font-semibold">100% online</strong>, podés participar desde cualquier
+                lugar, siempre y cuando tengas <strong class="font-semibold">micrófono</strong> y
+                <strong class="font-semibold">puedas asistir</strong> a las sesiones.
+              </li>
+              <li class="mb-3">
+                <strong class="font-semibold">2 sesiones semanales</strong>, de
+                <strong class="font-semibold">1hr</strong> (audio/videollamada por
+                <a
+                  class="underline"
+                  href="https://discord.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><strong class="font-semibold">Discord</strong></a
+                >).
+              </li>
+              <li class="mb-3">
+                <strong class="font-semibold">No son clases</strong> (vas a estudiar la teoría por
+                tu cuenta), mi rol es proponer una
+                <strong class="font-semibold">dinámica de trabajo</strong> (que se va a ir adaptando
+                al grupo), <strong class="font-semibold">guiarte</strong> cuando no se entienda
+                algún enunciado o tengas dificultades con algún ejercicio,
+                <strong class="font-semibold">responder dudas</strong> sobre lo que estemos viendo,
+                dar <strong class="font-semibold">feedback</strong> sobre las soluciones. No tengo
+                todas las respuestas, si algo no sale, lo googleamos y vemos como lo resolvemos. 🤘
+              </li>
+              <li class="mb-3">
+                <strong class="font-semibold">Code reviews</strong>: vas a evaluar las soluciones
+                del resto, para poner a prueba tus conocimientos.
+              </li>
+              <li>
+                <strong class="font-semibold">Canal privado de Discord</strong>, para hacer o
+                responder consultas y compartir <strong class="font-semibold">recursos</strong>. En
+                este chat podés dejar consultas en cualquier momento, que pueden responder después
+                tus compañeras/os o yo, cuando pueda y esté disponible.
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section id="schedule" class="mb-48 max-w-5xl">
+          <h2 class="text-brand-cyan text-3xl mb-12" style="font-family: 'Raleway', sans-serif;">
+            Días y horarios
+          </h2>
+          <div style="font-family: 'Montserrat', sans-serif;" class="text-base font-light">
+            <p>
+              <strong class="font-semibold">Lunes y Miércoles, de 19 a 20hs</strong> (horario según
+              <strong class="font-semibold">UTC/GMT -03:00</strong>, Argentina/Buenos Aires),
+              comenzando el Lunes 10 de Agosto.
+            </p>
+          </div>
+        </section>
+
+        <section id="pricing" class="max-w-5xl mb-48">
+          <h2 class="text-brand-cyan text-3xl mb-10" style="font-family: 'Raleway', sans-serif;">
+            Costo
+          </h2>
+          <div style="font-family: 'Montserrat', sans-serif;" class="text-base font-light">
+            <p>
+              <strong class="font-semibold text-brand-cyan">Pagás lo que querés</strong> (aka
+              <em>a la gorra</em>): no tiene un costo fijo, sino que
+              <strong class="font-semibold"
+                >el precio de cada sesión lo ponés vos (no es gratis)</strong
+              >, con un
+              <strong class="font-semibold">mínimo sugerido de ARS $500 por sesión</strong>
+              (o lo que es lo mismo, ARS $1000 por semana ó ARS $4000 por mes). De ahí en adelante,
+              sentite libre de aportar lo que quieras y puedas, según el valor que consideres que te
+              aportó la mentoría.
+            </p>
+
+            <br />
+
+            <p>
+              Los pagos se reciben a través de la plataforma
+              <a
+                class="underline"
+                href="https://cafecito.app/nhsz"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><strong class="font-semibold">Cafecito</strong></a
+              >.
+            </p>
+          </div>
+        </section>
+
+        <section id="reviews" class="text-brand-white mb-64 max-w-5xl">
+          <h2 class="text-brand-cyan text-3xl mb-12" style="font-family: 'Raleway', sans-serif;">
+            Algunas opiniones
+          </h2>
+
+          <div class="mb-8 flex flex-col sm:flex-row items-center p-6 shadow-black rounded">
+            <div class="w-xxs sm:mb-0 mb-8 sm:mr-8 inline-block shadow-sm">
+              <img
+                class="rounded-full"
+                src="https://ik.imagekit.io/di61zq8lsy/carolina-bonini_709AUdc1q.jpeg"
+                alt="Carolina Bonini Salas"
+              />
+            </div>
+
+            <div>
+              <p style="font-family: 'Montserrat', sans-serif;" class="text-sm font-light mb-6">
+                Tuve a Nico como mentor y me llevé una muy buena experiencia. Se nota la amplitud de
+                su conocimiento y su vocación al enseñar, preocupándose de cada detalle a lo largo
+                de toda la cursada para que todos podamos avanzar sin problemas.
+              </p>
+
+              <p style="font-family: 'Montserrat', sans-serif;" class="text-sm font-light">
+                Además, tiene muy buena disposición a la hora de responder dudas o de ampliar los
+                temas vistos.
+              </p>
+
+              <p
+                class="mt-4 text-brand-cyan text-base font-semibold"
+                style="font-family: 'Raleway', sans-serif;"
+              >
+                Carolina Bonini Salas
+              </p>
+            </div>
+          </div>
+
+          <div class="mb-8 flex flex-col sm:flex-row items-center p-6 shadow-black rounded">
+            <div class="w-xxs sm:mb-0 mb-8 sm:mr-8 inline-block shadow-sm">
+              <img
+                class="rounded-full"
+                src="https://ik.imagekit.io/di61zq8lsy/leonardo-toccaceli_DHwSNY2Tef.jpeg"
+                alt="Leonardo Toccaceli"
+              />
+            </div>
+
+            <div>
+              <p style="font-family: 'Montserrat', sans-serif;" class="text-sm font-light mb-6">
+                La experiencia que tuve como estudiante fue excelente. Llegué con conceptos básicos
+                de HTML, CSS y JS y terminé sintiéndome muy seguro de mis conocimientos y con la
+                capacidad de aplicarlos para construir aplicaciones reales.
+              </p>
+
+              <p style="font-family: 'Montserrat', sans-serif;" class="text-sm font-light">
+                La capacidad de Nico como docente es muy buena, muchísima paciencia para explicar
+                los temas y también mucha creatividad a la hora de proponer ejercicios y desafíos
+                técnicos.
+              </p>
+
+              <p
+                class="mt-4 text-brand-cyan text-base font-semibold"
+                style="font-family: 'Raleway', sans-serif;"
+              >
+                Leonardo Toccaceli
+              </p>
+            </div>
+          </div>
+
+          <div class="mb-8 flex flex-col sm:flex-row items-center p-6 shadow-black rounded">
+            <div class="w-xxs sm:mb-0 mb-8 sm:mr-8 inline-block shadow-sm">
+              <img
+                class="rounded-full"
+                src="https://ik.imagekit.io/di61zq8lsy/milagros-borroni_ToqxURc1h.jpeg"
+                alt="Milagros Borroni"
+              />
+            </div>
+
+            <div>
+              <p style="font-family: 'Montserrat', sans-serif;" class="text-sm font-light mb-6">
+                Hice el curso de desarrollo Full Stack JS con Nico, es un excelente mentor, con
+                mucha paciencia y apasionado por lo que hace. El curso tiene un programa destacable,
+                centrándose en los fundamentos y el por qué de lo que aprendemos.
+              </p>
+
+              <p style="font-family: 'Montserrat', sans-serif;" class="text-sm font-light">
+                Disfruté mucho del enfoque del curso, el material utilizado, y de los trabajos
+                integradores realizados.
+              </p>
+
+              <p
+                class="mt-4 text-brand-cyan text-base font-semibold"
+                style="font-family: 'Raleway', sans-serif;"
+              >
+                Milagros Borroni
+              </p>
+            </div>
+          </div>
+
+          <div class="mb-8 flex flex-col sm:flex-row items-center p-6 shadow-black rounded">
+            <div class="w-xxs sm:mb-0 mb-8 sm:mr-8 inline-block shadow-sm">
+              <img
+                class="rounded-full"
+                src="https://ik.imagekit.io/di61zq8lsy/martin-quintana_UOOdQmdJ4.jpeg"
+                alt="Martín Quintana"
+              />
+            </div>
+
+            <div>
+              <p style="font-family: 'Montserrat', sans-serif;" class="text-sm font-light mb-6">
+                Nico es un excelente mentor, tiene gran criterio a la hora de elegir el material de
+                apoyo y buena predisposición para explicar cosas que, incluso, escapaban de la
+                currícula del curso. Los conceptos fueron profundizados al agregarlos a las
+                prácticas.
+              </p>
+
+              <p style="font-family: 'Montserrat', sans-serif;" class="text-sm font-light">
+                A los pocos meses de haber empezado en
+                <strong class="font-semibold">undefined school</strong>, logré tener mi primer
+                trabajo como Dev Jr.
+              </p>
+
+              <p
+                class="mt-4 text-brand-cyan text-base font-semibold"
+                style="font-family: 'Raleway', sans-serif;"
+              >
+                Martín Quintana
+              </p>
+            </div>
+          </div>
+
+          <div class="flex flex-col sm:flex-row items-center p-4 shadow-black rounded">
+            <div class="w-xxs sm:mb-0 mb-8 sm:mr-8 inline-block shadow-sm">
+              <img
+                class="rounded-full"
+                src="https://ik.imagekit.io/di61zq8lsy/lucas-livchits_xDvYxnjX7.jpeg"
+                alt="Lucas Livchits"
+              />
+            </div>
+
+            <div>
+              <p style="font-family: 'Montserrat', sans-serif;" class="text-sm font-light mb-6">
+                Completé y disfruté el curso de Full Stack de Nicolás. El recorrido que diseñó y la
+                forma de dar los contenidos me brindaron bases sólidas sobre el desarrollo web.
+              </p>
+
+              <p style="font-family: 'Montserrat', sans-serif;" class="text-sm font-light">
+                Su capacidad pedagógica, paciencia y preocupación por que entendiéramos los
+                fundamentos de lo que aprendimos, acompañadas por la realización de proyectos
+                originales, hicieron del curso una experiencia muy positiva y gratificante.
+              </p>
+
+              <p
+                class="mt-4 text-brand-cyan text-base font-semibold"
+                style="font-family: 'Raleway', sans-serif;"
+              >
+                Lucas Livchits
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section id="apply" class="mb-64 max-w-5xl">
+          <div class="pl-8 py-12 lg:py-16 lg:flex lg:items-center lg:justify-between">
+            <h2
+              class="text-gray-500 text-3xl leading-9 sm:leading-10"
+              style="font-family: 'Raleway', sans-serif;"
+            >
+              Te interesa formar parte?
+              <span class="text-4xl block mt-2 text-brand-white font-bold">Sumate.</span>
+            </h2>
+            <div class="mt-16 flex lg:flex-shrink-0 lg:mt-0">
+              <div class="inline-block shadow-xs">
+                <a
+                  href="https://undefinedschool.typeform.com/to/iAGeBSdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><button
+                    class="shadow-sm container apply-button text-brand-black bg-brand-cyan font-semibold inline-block text-center text-lg"
+                  >
+                    Aplicar
+                  </button></a
+                >
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="faq" class="mb-64 max-w-5xl">
+          <h2 class="text-brand-cyan text-3xl mb-12" style="font-family: 'Raleway', sans-serif;">
+            FAQ
+          </h2>
+          <section class="mb-24">
+            <h3 class="text-xl mb-6" style="font-family: 'Raleway', sans-serif;">
+              Necesito conocimientos previos?
+            </h3>
+
+            <div style="font-family: 'Montserrat', sans-serif;" class="text-sm font-light">
+              <p class="mb-2">
+                Si los tenés mejor, pero está pensado para arrancar
+                <strong class="font-semibold">de cero</strong>, con HTML (si ya tenés bastantes
+                conocimientos del tema, tal vez te aburras un poco en las primeras sesiones, en ese
+                caso aclaralo en el formulario de aplicación y te tengo en cuenta para ás adelante).
+              </p>
+
+              <p class="font-semibold">
+                Si es muy necesario que puedas manejarte bien con el navegador, leer y entender
+                textos en inglés.
+              </p>
+            </div>
+          </section>
+
+          <section class="mb-24">
+            <h3 class="text-xl mb-6" style="font-family: 'Raleway', sans-serif;">
+              Puedo participar si estoy fuera de Argentina?
+            </h3>
+
+            <p style="font-family: 'Montserrat', sans-serif;" class="text-sm font-light">
+              Claro! Es <strong class="font-semibold">online</strong>, asi que
+              <strong class="font-semibold">podés sumarte desde cualquier lugar</strong>, siempre
+              que puedas asistir a las sesiones en el horario indicado.
+            </p>
+          </section>
+
+          <section class="mb-24">
+            <h3 class="text-xl mb-6" style="font-family: 'Raleway', sans-serif;">
+              No estoy en Argentina o no tengo un medio soportado por MercadoPago, hay otros medios
+              de pago disponibles?
+            </h3>
+
+            <p style="font-family: 'Montserrat', sans-serif;" class="text-sm font-light">
+              Si, también se reciben contribuciones en criptomonedas como
+              <strong class="font-semibold">DAI</strong>,
+              <strong class="font-semibold">BTC</strong> o a través de
+              <strong class="font-semibold">PayPal</strong>. En ese caso,
+              <strong class="font-semibold">el monto mínimo sugerido es de U$S 5 por sesión</strong>
+              (es decir, U$S 10 por semana ó U$S 40 por mes).
+            </p>
+          </section>
+
+          <section class="mb-24">
+            <h3 class="text-xl mb-6" style="font-family: 'Raleway', sans-serif;">
+              Durante las sesiones puedo hacer consultas sobre cualquier otro tema?
+            </h3>
+
+            <p style="font-family: 'Montserrat', sans-serif;" class="text-sm font-light">
+              <strong class="font-semibold">Vamos a enfocarnos en lo que estemos viendo</strong>
+              para avanzar juntos. Para preguntas sobre cualquier otro tema, te recomiendo consultar
+              en los canales del
+              <a
+                class="underline"
+                href="https://freecodecampba.org/chat"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><strong class="font-semibold">chat de freeCodeCampBA</strong></a
+              >.
+            </p>
+          </section>
+
+          <section class="mb-24">
+            <h3 class="text-xl mb-6" style="font-family: 'Raleway', sans-serif;">
+              Qué pasa si estoy más atrasada/o ó adelantada/o que el resto?
+            </h3>
+
+            <p style="font-family: 'Montserrat', sans-serif;" class="text-sm font-light">
+              La idea es, siempre que sea posible,
+              <strong class="font-semibold">avanzar en grupo</strong>. Si vas más adelante, podés
+              aprovechar para ayudar al resto!
+            </p>
+          </section>
+
+          <section>
+            <h3 class="text-xl mb-6" style="font-family: 'Raleway', sans-serif;">
+              Si no quedo seleccionada/o para el primer grupo, puedo entrar más adelante?
+            </h3>
+
+            <p style="font-family: 'Montserrat', sans-serif;" class="text-sm font-light">
+              Si, en el caso de que haya vacantes, te voy a estar avisando para que te sumes,
+              dándole prioridad a la gente que haya quedado en lista de espera.
+            </p>
+          </section>
+        </section>
+
+        <section id="subscribe" class="mb-64 max-w-5xl">
+          <div class="pl-8 py-12 lg:py-16 lg:flex lg:items-center lg:justify-between">
+            <h2
+              class="text-gray-500 text-3xl leading-9 sm:leading-10"
+              style="font-family: 'Raleway', sans-serif;"
+            >
+              Querés estar al tanto de las novedades?
+              <span class="text-4xl inline-block mt-2 text-brand-white font-bold"
+                >Suscribite al newsletter.</span
+              >
+            </h2>
+            <div class="mt-16 flex lg:flex-shrink-0 lg:mt-0">
+              <div class="inline-block shadow-xs">
+                <a href="https://buttondown.email/nhsz" target="_blank" rel="noopener noreferrer"
+                  ><button
+                    class="shadow-sm container apply-button text-brand-black bg-brand-cyan font-semibold inline-block text-center text-lg"
+                  >
+                    Suscribirme
+                  </button></a
+                >
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section
+          id="about-mentor"
+          class="text-brand-white mb-64 p-6 shadow-black rounded max-w-5xl"
+        >
+          <h2 class="text-brand-cyan text-3xl mb-12" style="font-family: 'Raleway', sans-serif;">
+            Sobre el mentor
+          </h2>
+
+          <div class="flex flex-col sm:flex-row items-center">
+            <div class="max-w-48 sm:mb-0 mb-8 sm:mr-8 inline-block shadow-sm">
+              <img
+                class="rounded-full"
+                src="https://ik.imagekit.io/di61zq8lsy/myself_mAObDgMcg0.jpeg"
+                alt="Nico"
+              />
+            </div>
+
+            <div>
+              <p style="font-family: 'Montserrat', sans-serif;" class="text-sm font-light mb-8">
+                <strong class="font-semibold">Full Stack Software Engineer</strong> desde hace más
+                de 5 años y mentor en <strong class="font-semibold">desarrollo web</strong> desde
+                hace más de 3. Me gusta estudiar y entender los conceptos en profundidad, para
+                después
+                <a
+                  class="underline"
+                  href="https://github.com/undefinedschool/notes"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >compartirlos</a
+                >.
+              </p>
+
+              <p style="font-family: 'Montserrat', sans-serif;" class="text-sm font-light">
+                Co-fundador y co-organizador de
+                <a
+                  class="underline"
+                  href="https://freecodecampba.org"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><strong class="font-semibold">freeCodeCampBA</strong></a
+                >, una de las comunidades de <strong class="font-semibold">freeCodeCamp</strong> más
+                grandes de latinoamérica y
+                <a
+                  class="underline"
+                  href="https://twitter.com/LXBA_"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><strong class="font-semibold">LXBA</strong></a
+                >, una meetup que nació con la idea de conectar los mundos de la educación y la
+                tecnología.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section id="contact" class="mb-64 text-brand-white max-w-5xl">
+          <h2 class="text-brand-cyan text-3xl mb-12" style="font-family: 'Raleway', sans-serif;">
+            Contacto
+          </h2>
+
+          <p style="font-family: 'Montserrat', sans-serif;" class="text-base font-light">
+            Si te quedó alguna duda sobre la propuesta, podés escribirme por
+            <a
+              class="underline"
+              href="https://twitter.com/_nhsz"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><strong class="font-semibold">twitter</strong></a
+            >
+            o enviarme un
+            <a class="underline" href="mailto:contacto@undefinedschool.io"
+              ><strong class="font-semibold">email</strong></a
+            >.
+          </p>
+        </section>
+      </main>
+      <footer class="mt-24 font-light text-sm text-brand-white text-center">
+        <p>
+          <a class="underline" href="#top">inicio</a>
+          | dev x
+          <a
+            class="underline"
+            href="https://twitter.com/_nhsz"
+            target="_blank"
+            rel="noopener noreferrer"
+            >nhsz</a
+          >
+          |
+          <a
+            class="underline"
+            href="https://undefinedschool.io"
+            target="_blank"
+            rel="noopener noreferrer"
+            >undefinedschool.io</a
+          >
+        </p>
+      </footer>
+    </div>
+
+    <script>
+      const nav = document.getElementById('hamburguer-menu');
+      let navList = document.getElementsByClassName('nav-list');
+      navList = navList[0];
+      const hamburguerButton = document.getElementById('hamburguer-button');
+      const openIcon = document.getElementById('open-icon');
+      const closeIcon = document.getElementById('close-icon');
+      const isMobile = window.innerWidth < 768;
+
+      let isOpen = false;
+
+      window.addEventListener('resize', () => {
+        if (!isOpen && window.innerWidth < 1024) {
+          nav.style.maxHeight = 0;
+          navList.style.display = 'none';
+          openIcon.style.display = 'block';
+          closeIcon.style.display = 'none';
+        } else {
+          navList.style.display = 'block';
+        }
+      });
+
+      hamburguerButton.addEventListener('click', () => {
+        isOpen = !isOpen;
+
+        if (isOpen) {
+          nav.style.maxHeight = '200px';
+          openIcon.style.display = 'none';
+          closeIcon.style.display = 'block';
+          setTimeout(() => (navList.style.display = 'block'), 100);
+        } else {
+          nav.style.maxHeight = 0;
+          navList.style.display = 'none';
+          openIcon.style.display = 'block';
+          closeIcon.style.display = 'none';
+        }
+      });
+
+      document.body.addEventListener('click', () => {
+        if (isMobile && hamburguerButton !== document.activeElement) {
+          nav.style.maxHeight = 0;
+          navList.style.display = 'none';
+          openIcon.style.display = 'block';
+          closeIcon.style.display = 'none';
+          isOpen = false;
+        }
+      });
+    </script>
+  </body>
+</html>
