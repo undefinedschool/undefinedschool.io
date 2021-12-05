@@ -14,7 +14,8 @@
   },
   "scripts": {
     "dev": "live-server --quiet index.html",
-    "build:css": "postcss src/app.css -o dist/styles.css"
+    "build:css": "postcss src/app.css -o dist/styles.css",
+    "build": "npm run build:css"
   },
   "husky": {
     "hooks": {
